@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Edu+SA+Hand:wght@400..700&family=Noto+Sans+Sunuwar&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --white: #f8f8f8;
+    --mid-grey: #a5a5a5;
+    --grey: #5c5c5c;
+    --blue: #465ddf;
+    --black: #00001f;
+    --purblack: #1a0542;
+    --purple: #290966;
+    --mid-purple: #31106e;
+    --light-purple: #703bd1;
+    --transition-time: .3s;
+    --transition-animation: ease;
+}
+
+img[alt="bh2-logo-white"] {
+    width: 50px;
+    height: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Noto Sans Sunuwar";
+    background: linear-gradient(0deg, var(--black), var(--purblack));
+    min-height: 98dvh;
+}
+
+footer {
+    position: fixed;
+    width: 50%;
+    bottom: 0;
+    color: var(--white);
+
+    & div[class="powered"] {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: .3rem;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 98dvh;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: var(--white);
+    background: none;
+}
+
+section[id="login-title"] {
+    width: 50%;
+
+    & h1 {
+        font-size: 25pt;
+        color: var(--white);
+    }
+}
+
+form[id="login"] {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+label[class="label-login"] {
+    appearance: none;
+    outline: none;
+    width: 20rem;
+    height: 2.7rem;
+    background: none;
+    border-radius: .17rem;
+    border-style: none;
+}
+
+input[class="input-login"] {
+    appearance: none;
+    outline: none;
+    width: 90%;
+    height: 100%;
+    font-size: 12pt;
+    border-radius: .17rem;
+    border-style: none;
+    background: var(--white);
+    margin: auto;
+    padding: 0 15px 0 15px;
+    box-shadow: inset 0 -1px 0 var(--light-purple);
+    transition: all var(--transition-time) var(--transition-animation);
+
+    &:hover {
+        background-color: var(--mid-grey);
+    }
+
+    &:focus {
+        box-shadow: inset 0 -2px 0 var(--light-purple);
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1.4rem;
+    border-style: none;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.span-label {
+    position: absolute;
+    top: 46%;
+    right: 55.5%;
+    font-size: 12pt;
+    pointer-events: none;
+}
+
+.b-purple-invert {
+    background: linear-gradient(var(--purple), var(--mid-purple));
+    color: var(--white);
+    transition: all var(--transition-animation) var(--transition-time);
+
+    &:hover {
+        background: var(--white);
+        color: var(--purple);
+    }
+}
+
+.grey {
+    color: var(--grey);
+}

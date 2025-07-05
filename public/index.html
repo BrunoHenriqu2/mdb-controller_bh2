@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mdb-controller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section id="login-title">
+            <h1>BH2</h1>
+        </section>
+        <section id="login-content">
+            <form action="/api/validate" method="post" id="login">
+                <label for="username" class="label-login">
+                    <input type="text" title="username" class="input-login" id="username" placeholder="Usuário">
+                </label>
+                <label for="password" class="label-login">
+                    <input type="password" title="password" class="input-login" id="password" placeholder="Senha">
+                </label>
+                <div class="store-button">
+                    <button type="button" class="b-purple-invert">LOGIN</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="powered">
+            <p>Powered by</p>
+            <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/v1751425145/BH2-4-white-mini_kb3ooc.svg"
+                alt="bh2-logo-white">
+        </div>
+    </footer>
+    <script src="./js/scheduler.js"></script>
+    <script src="./js/animations.js"></script>
+</body>
+
+</html>
