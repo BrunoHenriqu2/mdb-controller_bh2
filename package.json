@@ -1,0 +1,27 @@
+{
+  "name": "mdb-controller_bh2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoHenriqu2/mdb-controller_bh2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoHenriqu2/mdb-controller_bh2/issues"
+  },
+  "homepage": "https://github.com/BrunoHenriqu2/mdb-controller_bh2#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

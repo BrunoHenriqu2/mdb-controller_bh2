@@ -14,7 +14,7 @@
             <h1>BH2</h1>
         </section>
         <section id="login-content">
-            <form action="/api/validate" method="post" id="login">
+            <form id="login">
                 <label for="username" class="label-login">
                     <input type="text" title="username" class="input-login" id="username" placeholder="Usuário">
                 </label>
@@ -22,8 +22,8 @@
                     <input type="password" title="password" class="input-login" id="password" placeholder="Senha">
                 </label>
                 <div class="store-button">
-                    <button type="button" class="b-purple-invert">LOGIN</button>
-                </div>
+                <button type="button" class="b-purple-invert" id="login-button">LOGIN</button>
+            </div>
             </form>
         </section>
     </main>
@@ -37,6 +37,8 @@
     </footer>
     <script src="./js/scheduler.js"></script>
     <script src="./js/animations.js"></script>
+    <script src="./js/creator.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

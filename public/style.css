@@ -10,6 +10,8 @@
     --purple: #290966;
     --mid-purple: #31106e;
     --light-purple: #703bd1;
+    --red: #d13d3d;
+    --light-red: #fadad8f5;
     --transition-time: .3s;
     --transition-animation: ease;
 }
@@ -26,7 +28,19 @@ body {
     text-align: center;
     font-family: "Noto Sans Sunuwar";
     background: linear-gradient(0deg, var(--black), var(--purblack));
-    min-height: 98dvh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 98.3vh;
+    border-radius: 1rem;
+    text-align: center;
+    background: none;
+    gap: 1rem;
 }
 
 footer {
@@ -44,19 +58,6 @@ footer {
     }
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: 98dvh;
-    border-radius: 1rem;
-    text-align: center;
-    background-color: var(--white);
-    background: none;
-}
-
 section[id="login-title"] {
     width: 50%;
 
@@ -66,7 +67,7 @@ section[id="login-title"] {
     }
 }
 
-form[id="login"] {
+form[id="login"], section[id="login-content"] {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -79,7 +80,7 @@ label[class="label-login"] {
     width: 20rem;
     height: 2.7rem;
     background: none;
-    border-radius: .17rem;
+    border-radius: .3rem;
     border-style: none;
 }
 
@@ -89,7 +90,7 @@ input[class="input-login"] {
     width: 90%;
     height: 100%;
     font-size: 12pt;
-    border-radius: .17rem;
+    border-radius: .3rem;
     border-style: none;
     background: var(--white);
     margin: auto;
@@ -115,6 +116,38 @@ button {
     border-style: none;
     font-size: 11pt;
     font-weight: bold;
+}
+
+.error-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5rem;
+    color: #d13d3d;
+    border-radius: .5rem;
+    border-color: #d13d3d;
+    background-color: var(--light-red);
+    width: 20rem;
+    box-shadow: inset 5px 0px 0px var(--red);
+
+    & div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        width: 90%;
+    }
+
+    & .err-img{
+        margin-bottom: 2px;
+    }
+
+    & p {
+        font-size: 11pt;
+        letter-spacing: -.5px;
+    }
 }
 
 .span-label {
